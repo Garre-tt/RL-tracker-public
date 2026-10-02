@@ -127,6 +127,11 @@ h3{
 .nav-download span{
   margin-left:9px
 }
+.nav-support{
+  display:inline-flex;
+  align-items:center;
+  min-height:44px
+}
 .hero{
   display:grid;
   grid-template-columns:1.5fr 1fr;
@@ -594,7 +599,7 @@ footer>p{
 }
 @media(max-width:720px){
   html{
-    scroll-padding-top:76px
+    scroll-padding-top:120px
   }
   .wrap{
     width:calc(100% - 40px)
@@ -602,7 +607,9 @@ footer>p{
   .nav-inner{
     width:calc(100% - 32px);
     min-height:64px;
-    gap:12px
+    gap:8px;
+    flex-wrap:wrap;
+    padding-block:12px
   }
   .brand{
     font-size:13px;
@@ -613,9 +620,11 @@ footer>p{
     height:27px
   }
   .navigation nav{
-    gap:0
+    gap:18px;
+    width:100%;
+    justify-content:space-between
   }
-  .navigation nav>a:not(.nav-download){
+  .navigation nav>a:not(.nav-download):not(.nav-support){
     display:none
   }
   .nav-download{

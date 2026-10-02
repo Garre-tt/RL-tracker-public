@@ -21,9 +21,11 @@
         url.username || url.password || url.search || url.hash ||
         !/^\/[a-zA-Z0-9_-]{2,40}\/?$/.test(url.pathname) ||
         /^\/(realname|username|yourname|placeholder|example|support|signup|login)\/?$/i.test(url.pathname)) return;
-    const link = document.getElementById("support-link");
-    link.href = url.href;
-    link.hidden = false;
+    for (const id of ["header-support-link", "support-link"]) {
+      const link = document.getElementById(id);
+      link.href = url.href;
+      link.hidden = false;
+    }
     document.getElementById("support-status").textContent = "Optional support through Buy Me a Coffee.";
   }
 })();
