@@ -32,6 +32,6 @@ Current deployment is a manual static ZIP from this repository's commit `ca93e0e
 
 For future updates, package the contents of `website/` (HTML, CSS, JavaScript, and approved assets) without its containing folder, then upload to the existing Amplify production branch. No build command, dependencies, environment variables, backend, or SPA fallback. Git pushes do not automatically update Amplify. Never include application source or private repository history in a public package.
 
-Custom domains `rlstattracker.link` and `www.rlstattracker.link` have been associated. Registration/DNS/managed SSL and HTTPS still require final verification. Use the Amplify URL until those checks complete.
+Custom domains `rlstattracker.link` and `www.rlstattracker.link` have been associated. Latest reported status: Domain activation, “Creating records associated with your domain...”, after SSL setup progressed. Route 53 registration remains in progress, and the apex URL returned `ERR_NAME_NOT_RESOLVED`. Custom-domain access is waiting on registration/DNS; neither custom URL is verified live. Use the working Amplify URL until DNS, certificate activation, and HTTPS checks complete.
 
 The prior GitHub Pages host remains available, and its existing workflow can still run on main pushes. A successful Pages run does not deploy to Amplify. Docs-only migration updates use `[skip ci]`.
