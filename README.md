@@ -28,7 +28,7 @@ Independent community project. Not affiliated with or endorsed by Psyonix or Epi
 
 Primary site: [AWS Amplify production](https://production.d3iwrtldtiavjg.amplifyapp.com/).
 
-Current deployment is a manual static ZIP from this repository's commit `ca93e0eae874f697a891834c7e487c6d7880a38c`. The ZIP contains only the eight runtime files under `website/`, with `index.html` at the archive root. Size: 2,570,826 bytes. SHA256: `10eb0531f44cf32f698b9886aa575dc8d217cb77c6a81db3db610d22f69ce9c3`. All eight production files were verified against the uploaded runtime source.
+Current deployment is the manual `amplify-site-header-coffee.zip` upload from this repository's commit `e709e324775de66623b095abc1b0b35ab969d117`. The live header coffee link is verified; the existing support section remains. The ZIP contains only the eight runtime files under `website/`, with `index.html` at the archive root. Size: 2,570,938 bytes. SHA256: `8ed216ab910ff44e59bf98c35ee96d9e41bd3471352b5ba934b8eee742f45382`. All archive entries were verified against the runtime source, and the deployed HTML, CSS, script, and config match that revision.
 
 For future updates, package the contents of `website/` (HTML, CSS, JavaScript, and approved assets) without its containing folder, then upload to the existing Amplify production branch. No build command, dependencies, environment variables, backend, or SPA fallback. Git pushes do not automatically update Amplify. Never include application source or private repository history in a public package.
 
