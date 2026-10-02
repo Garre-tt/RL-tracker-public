@@ -44,3 +44,10 @@ Finalized privacy and beta terms are included in `website/privacy.html` and `web
 The ten-file candidate `amplify-site-public-policies-gated-beta2.zip` was uploaded through Chrome to Amplify production as deployment 4 on October 2, 2026; status Deployed. Size: 2,577,699 bytes. SHA256: `b36d90582f19201fb1998930c38931b557de2a94d21d7166b8ebc1f34ca57484`. Entries match public runtime revision `087f993f003bd2d72d48dbc15ef1783c3f4edbb9`. No private source or internal documents are included.
 
 Beta.2 Setup, portable ZIP, checksum, and provenance URLs are staged with `releaseVerified: false`. The release-list fallback stays active and direct asset links remain hidden. Activate only after publication and anonymous asset/hash verification, then rebuild the ZIP. This policy candidate does not activate beta.2 downloads. Both policy pages were verified live over HTTPS without draft markers. All ten live runtime files returned HTTP 200 and matched the archive bytes. This public sync uses `[skip ci]` to avoid a Pages deployment.
+
+
+## Beta.2 download activation
+
+The beta.2 prerelease is published. Setup and portable ZIP hashes were verified by anonymous download, and checksum/provenance sidecars were checked. `releaseVerified: true` enables the primary Windows Setup download, portable ZIP, both checksums, and build details. The policy deployment section above records the preceding gated revision.
+
+Fresh static deployment ZIP: `amplify-site-beta2-active.zip`, 2,577,706 bytes, SHA256 `b35dc4444ca65f4fd6c3d1997f54ddf28d74b0c9bc77db7fae6109144868d507`. Contains only the ten approved runtime files; no design changes. Deployment verification will be recorded after upload.
