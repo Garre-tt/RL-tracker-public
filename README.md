@@ -6,7 +6,7 @@ Public downloads, website and support for a free local Windows companion for Roc
 
 Download a Windows x64 package from [Releases](https://github.com/Garre-tt/RL-tracker-public/releases). Beta builds are prereleases.
 
-1. Extract the whole ZIP into a folder you can keep. Keep all companion files and `wwwroot` beside `RocketLeagueTracker.Desktop.exe`.
+1. Run the Windows Setup installer, or extract the portable ZIP into a folder you can keep. For portable use, keep all companion files and `wwwroot` beside `RocketLeagueTracker.Desktop.exe`.
 2. Open `RocketLeagueTracker.Desktop.exe`. The .NET runtime is bundled; the interface requires Microsoft's [Edge WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/).
 3. One-time setup asks about enabling Rocket League's local Stats API and confirming your game account. If setup changes the API setting, restart Rocket League while leaving the tracker open.
 4. Leave the tracker running while playing. It records matches it observes, not games played before capture.
@@ -50,4 +50,4 @@ Beta.2 Setup, portable ZIP, checksum, and provenance URLs are staged with `relea
 
 The beta.2 prerelease is published. Setup and portable ZIP hashes were verified by anonymous download, and checksum/provenance sidecars were checked. `releaseVerified: true` enables the primary Windows Setup download, portable ZIP, both checksums, and build details. The policy deployment section above records the preceding gated revision.
 
-Fresh static deployment ZIP: `amplify-site-beta2-active.zip`, 2,577,706 bytes, SHA256 `b35dc4444ca65f4fd6c3d1997f54ddf28d74b0c9bc77db7fae6109144868d507`. Contains only the ten approved runtime files; no design changes. Deployment verification will be recorded after upload.
+Fresh static deployment ZIP: `amplify-site-beta2-active.zip`, 2,577,706 bytes, SHA256 `b35dc4444ca65f4fd6c3d1997f54ddf28d74b0c9bc77db7fae6109144868d507`. Contains only the ten approved runtime files; no design changes. Uploaded through Chrome as Amplify deployment 5 on October 2, 2026, status Deployed. Runtime revision: `2f0b81a4b4149c60bc13a599e7e97291379fabf4`. Both root and www HTTPS sites show the correct Setup, portable ZIP, checksum/build-details, footer policy, and header coffee links. All ten runtime files on each hostname returned 200 and matched the archive bytes.
