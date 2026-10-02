@@ -869,3 +869,23 @@ footer>p{
     scroll-behavior:auto
   }
 }
+
+/* Shared legal pages and site footer navigation. */
+.legal-links{display:flex;gap:24px;flex-wrap:wrap;font-size:13px;margin-top:20px}
+.legal-links a{min-height:32px;display:inline-flex;align-items:center}
+.legal-page{max-width:780px;padding-block:72px 80px}
+.legal-page h1{font-size:clamp(42px,6vw,64px);margin-bottom:28px}
+.legal-page .legal-lead{font-size:19px;color:var(--ink)}
+.legal-page section{margin-top:38px}
+.legal-page h2{font-size:26px;letter-spacing:-.03em;line-height:1.25;margin-bottom:16px}
+.legal-page p,.legal-page li{font-size:16px;color:var(--secondary);line-height:1.75}
+.legal-page p+p,.legal-page li+li{margin-top:14px}
+.legal-page ul{padding-left:22px}
+.legal-page a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+.legal-page code{font-size:14px;overflow-wrap:anywhere}
+@media(max-width:720px){.legal-page{padding-block:44px 52px}.legal-page p,.legal-page li{font-size:15px}.legal-page h2{font-size:24px}}
+
+.release-links{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 24px;margin-top:20px;color:var(--blue);font-size:13px}
+.release-links a{display:inline-flex;align-items:center;min-height:32px}
+.download-heading>p.install-note{max-width:62ch;margin:20px auto 0;font-size:12px;line-height:1.7;color:var(--secondary)}
+.install-note a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
